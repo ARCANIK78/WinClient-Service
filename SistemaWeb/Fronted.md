@@ -1,4 +1,4 @@
-### 馃寪 Configuraci贸n del Frontend 
+### Configuración del Frontend 
 
 Pasos para registrar el Frontend como servicio de Windows: en mi caso mi frontend use (React) 
 
@@ -10,19 +10,19 @@ cd "C:\Users\DELL\Documents\Tareas de trabajos y cursos\project\SistemaWeb-Talle
 ```
 
 **3. Registro del servicio con NSSM:**
-Ejecute el siguiente comando para abrir la interfaz de configuraci贸n:
+Ejecute el siguiente comando para abrir la interfaz de configuración:
 
 ```bash
 nssm install ReactFrontend
 
 ```
 
-### 馃寪 Par谩metros de Configuraci贸n en la Interfaz (Frontend)
+### Parámetros de Configuración en la Interfaz (Frontend)
 
-Dependiendo de c贸mo prefieras ejecutar la aplicaci贸n, utiliza una de las siguientes configuraciones en **NSSM**:
+Dependiendo de cómo prefieras ejecutar la aplicación, utiliza una de las siguientes configuraciones en **NSSM**:
 
-#### Opci贸n A: Usando Servidor Est谩tico (Recomendado para Producci贸n)
-Ideal si ya realizaste `npm run build` y quieres servir la carpeta de distribuci贸n.
+#### Opción A: Usando Servidor Estático (Recomendado para Producción)
+Ideal si ya realizaste `npm run build` y quieres servir la carpeta de distribución.
 
 | Campo | Valor |
 | :--- | :--- |
@@ -30,8 +30,8 @@ Ideal si ya realizaste `npm run build` y quieres servir la carpeta de distribuci
 | **Startup directory** | `C:\Users\DELL\Documents\Tareas de trabajos y cursos\project\SistemaWeb-Taller-YAMAHA\Frontend\principal-front` |
 | **Arguments** | `-s dist -l 3000` |
 
-#### Opci贸n B: Usando Script de Inicio (Node.js)
-Ideal si utilizas un archivo espec铆fico para levantar el servicio (en mi caso). 
+#### Opción B: Usando Script de Inicio (Node.js)
+Ideal si utilizas un archivo específico para levantar el servicio (en mi caso). 
 
 | Campo | Valor |
 | :--- | :--- |
